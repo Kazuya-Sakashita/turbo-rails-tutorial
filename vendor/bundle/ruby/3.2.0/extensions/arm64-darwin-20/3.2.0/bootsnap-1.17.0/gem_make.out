@@ -1,0 +1,22 @@
+current directory: /Users/sakashitakazuya/Desktop/work/qiita/20231113/turbo-rails-tutorial/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.17.0/ext/bootsnap
+/Users/sakashitakazuya/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/sakashitakazuya/Desktop/work/qiita/20231113/turbo-rails-tutorial/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.17.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20231113-5995-9gr78g sitelibdir\=./.gem.20231113-5995-9gr78g clean
+
+current directory: /Users/sakashitakazuya/Desktop/work/qiita/20231113/turbo-rails-tutorial/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.17.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20231113-5995-9gr78g sitelibdir\=./.gem.20231113-5995-9gr78g
+compiling bootsnap.c
+bootsnap.c:822:10: warning: unused variable 'contents' [-Wunused-variable]
+  char * contents = NULL;
+         ^
+1 warning generated.
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/sakashitakazuya/Desktop/work/qiita/20231113/turbo-rails-tutorial/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.17.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20231113-5995-9gr78g sitelibdir\=./.gem.20231113-5995-9gr78g install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20231113-5995-9gr78g/bootsnap
+
+current directory: /Users/sakashitakazuya/Desktop/work/qiita/20231113/turbo-rails-tutorial/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.17.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20231113-5995-9gr78g sitelibdir\=./.gem.20231113-5995-9gr78g clean
