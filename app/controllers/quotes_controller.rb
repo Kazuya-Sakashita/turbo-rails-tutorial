@@ -30,7 +30,11 @@ class QuotesController < ApplicationController
 
   def update
     if @quote.update(quote_params)
-      redirect_to quotes_path, notice: "Quote was successfully updated."
+      respond_to do |format|
+        format.html { redirect_to quotes_path, notice: "Quote was successfully updated." }
+        format.turbo_stream
+      end
+      # redirect_to quotes_path, notice: "Quote was successfully updated."
     else
       render :edit, status: :unprocessable_entity
     end
