@@ -2,14 +2,17 @@ require "application_system_test_case"
 
 class QuotesTest < ApplicationSystemTestCase
   setup do
+    login_as users(:accountant)
     @quote = Quote.ordered.first
   end
 
   test "Showing a quote" do
-    visit quotes_path
+    binding.pry
+    visit quotes_path(@quote)
     click_link @quote.name
 
     assert_selector "h1", text: @quote.name
+    expect(page).to have_content("#{@quote.name}")
   end
 
   test "Creating a new quote" do
